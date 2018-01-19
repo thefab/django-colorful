@@ -1,9 +1,11 @@
 from __future__ import unicode_literals
 
-from django.utils import version
+# uggly fix for #41
+# from django.utils import version
 
 __all__ = ['VERSION', '__version__']
 
 VERSION = (1, 2, 1, 'alpha', 0)
 
-__version__ = version.get_version(VERSION)
+# uggly fix for #41
+__version__ = ".".join([str(x) for x in VERSION[0:3]])
