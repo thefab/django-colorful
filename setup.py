@@ -1,11 +1,9 @@
 #!/usr/bin/env python
 from setuptools import find_packages, setup
 
-import colorful
-
 setup(
     name='django-colorful',
-    version=colorful.__version__,
+    version="dev",
     description='An extension to the Django web framework that provides database and form color fields',
     long_description=open('README.rst').read(),
     url='https://github.com/charettes/django-colorful',
